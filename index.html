@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Engaged Learning Student Feedback</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -23,14 +24,14 @@
         <fieldset>
             <legend>Student Information</legend>
 
-            <legend>First Name:</legend>
-            <input type="text" name="first-name" required>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
 
-            <legend>Last Name:</legend>
-            <input type="text" name="last-name" required>
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
 
             <label for="email">Email Address:</label>
-            <input type="text" id="email"
+            <input type="email" id="email"
                    name="email" required>
             <label for="bdaymonth">Birthday (month and year):</label>
             <input type="month" id="bdaymonth" name="bdaymonth">
@@ -50,23 +51,23 @@
         <div class="radio-group">
             <p>Current or Most Recent Project Stage:</p>
 
-            <input type="checkbox" id="preparing"
+            <input type="radio" id="preparing"
                    name="stage" value="preparing" required>
-            <label>Preparing for the Experience</label>
+            <label for="preparing">Preparing for the Experience</label>
 
-            <input type="checkbox" id="starting"
+            <input type="radio" id="starting"
                    name="stage" value="starting">
             <label for="starting">Starting the Experience</label>
 
-            <input type="checkbox" id="during"
+            <input type="radio" id="during"
                    name="stage" value="during">
             <label for="during">During the Experience</label>
 
-            <input type="checkbox" id="ending"
+            <input type="radio" id="ending"
                    name="stage" value="ending">
             <label for="ending">Ending the Experience</label>
 
-            <input type="checkbox" id="after"
+            <input type="radio" id="after"
                    name="stage" value="after">
             <label for="after">After the Experience</label>
         </div>
